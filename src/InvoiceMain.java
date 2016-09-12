@@ -16,16 +16,19 @@ public class InvoiceMain {
 				double tax = sc.nextDouble();
 				
 				
-				System.out.println("Do you want to Purchase");
-				String ans = sc.next();
 				
-				if (ans.equalsIgnoreCase("Yes")) {
+				
+				
+			
 				
 				int counter=0;
 				
 				for(int i=0;i<=5;i++){
-				
 					
+				System.out.println("Do you want to Purchase");
+				String ans = sc.next();
+				
+				if (ans.equalsIgnoreCase("Yes")) {
 				System.out.println("Enter the Sku");
 				String sku= sc.next();
 				
@@ -39,19 +42,22 @@ public class InvoiceMain {
 				
 				TotalPrice= TotalPrice + y;
 				
-				System.out.println("the total is :" + y);
-			//	;
-				//System.out.println(x.Description(itemPrice));
+				}
 				
-
-			}
+				else if (ans.equalsIgnoreCase("no")){
+				System.out.println("the total is :" + TotalPrice);
+				break;
+				
+		
+				}
 
 		
 
 
 	}
 	}
-}
+	}
+
 
 
 
